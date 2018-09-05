@@ -1,6 +1,6 @@
 {
   "name": "mememachine-api",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A service to stimulate the creation of memes.",
   "main": "handler.js",
   "scripts": {

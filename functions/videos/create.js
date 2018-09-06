@@ -16,6 +16,7 @@ export async function main(event, context, callback) {
   };
 
   try {
+    log(params);
     await dynamoDbLib.call("put", params);
     callback(null, success(params.Item));
   } catch (e) {

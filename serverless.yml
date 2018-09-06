@@ -56,7 +56,7 @@ functions:
   #     domain api call
   # - authorizer: authenticate using the AWS IAM role
   create:
-    handler: ./services/videos/create.main
+    handler: functions/videos/create.main
     events:
       - http:
           path: videos
@@ -68,7 +68,7 @@ functions:
     # Defines an HTTP API endpoint that calls the main function in get.js
     # - path: url path is /videos/{id}
     # - method: GET request
-    handler: ./services/videos/get.main
+    handler: functions/videos/get.main
     events:
       - http:
           path: videos/{id}
@@ -80,7 +80,7 @@ functions:
     # Defines an HTTP API endpoint that calls the main function in list.js
     # - path: url path is /videos
     # - method: GET request
-    handler: ./services/videos/list.main
+    handler: functions/videos/list.main
     events:
       - http:
           path: videos
@@ -92,7 +92,7 @@ functions:
     # Defines an HTTP API endpoint that calls the main function in update.js
     # - path: url path is /videos/{id}
     # - method: PUT request
-    handler: ./services/videos/update.main
+    handler: functions/videos/update.main
     events:
       - http:
           path: videos/{id}
@@ -104,7 +104,7 @@ functions:
     # Defines an HTTP API endpoint that calls the main function in delete.js
     # - path: url path is /videos/{id}
     # - method: DELETE request
-    handler: ./services/videos/delete.main
+    handler: functions/videos/delete.main
     events:
       - http:
           path: videos/{id}
